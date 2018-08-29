@@ -6,4 +6,12 @@ Otherwise
 ```
 python hello.py
 ```
+And then open the browser and head to `127.0.0.1:5000`
 ## Screenshots:
+
+Movies display
+`/moviesdisplay`
+![First screenshot](img/first.png)
+
+Single movie`/movies/1`
+![Second screenshot](img/second.png)
