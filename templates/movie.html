@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Hello world</title>
+        <style>
+            div{
+                background: yellow;
+                border: 4px solid black;
+                width: 400px;
+                height:600px;
+            }
+            .error
+            {
+                color: rgb(236, 30, 30);
+            }
+            .attribute
+            {
+                color:green
+            }
+        </style>
+    </head>
+    <body>
+        {% if found %}
+        <div>
+            <p>Movie title: {{title}}</p>
+            <p>Rating: {{rating}}</p>
+            <p class="attribute">summary:{{summary}}</p>
+            <p>view:{{view}}</p>
+            <p>Result:{{result}}</p>    
+            <a href="http://google.com/search?q={{title}}">Find on google</a>
+            <p>It is the image:<img src="{{image}}" alt="picture" width="100" height="100">can you see</p>
+            <iframe src="{{video}}">
+            </iframe>
+        </div>
+        {%if id1-1>0%}
+             <a href="{{id1-1}}">previous</a>
+        {% endif%}
+           <a href="{{id+1}}">next</a>
+        {% else %}
+            <p class="error">Sorry the movie does not exist</p>
+        {% endif %}
+    </body>
+</html>

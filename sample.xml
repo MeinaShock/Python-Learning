@@ -1,0 +1,14 @@
+<movies>
+    <movie isforchildren="true">
+        <id>1</id>
+        <title>Toy story</title>
+        <rating>3.5</rating>
+        <summary>good movie ever</summary>
+    </movie>
+    <movie isforchildren="false">
+        <id>2</id>
+        <title>Animal story</title>
+        <rating>2.5</rating>
+        <summary>violent movie</summary>
+    </movie>
+</movies>

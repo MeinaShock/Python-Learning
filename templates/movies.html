@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>MOVIES</title>
+    </head>
+    <body>
+        {% for M in movie_list%}
+        <a href="/movie/{{M["Id"]}}">{{M["Title"]}}</a>
+        {% endfor %}
+    </body>
+</html>

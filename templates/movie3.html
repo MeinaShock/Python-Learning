@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>SUMMARY</title>
+    <style>
+        div {
+            background: yellow;
+            border: thick;
+            width: 200px;
+            display: inline-block;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% for MM in movie_list %}
+    <div>
+        <a href="/movie/{{MM["id"]}}">
+            <img src="{{MM["image"]}}">
+            <h1>{{MM["title"]}}</h1>
+            <p>{{MM["summary"]}}</p>
+            
+        </a>
+    </div>
+    {%endfor%}
+
+</body>
+
+</html>
